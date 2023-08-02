@@ -64,6 +64,7 @@ class GUI:
     def __init__(self, master):
         self.master = master
         master.title("Audio Recorder")
+        master.geometry("300x300")
 
         self.mic_recorder = AudioRecorder()
         self.speaker_recorder = AudioRecorder(loopback=True)
